@@ -22,9 +22,9 @@ This is ideal for monitoring sensitive folders in a production or development en
 Create a `.env` file in the project root with the following contents:
 
 ```env
-EMAIL_USER=openprojectmpower@gmail.com
-EMAIL_PASS=czgctjlbkdqlmqlr
-EMAIL_TO=fahad@mpower-social.com
+EMAIL_USER=sender@mail.com
+EMAIL_PASS=****************
+EMAIL_TO=receiver@mail.com
 WATCH_DIR=/home/fahad/Workspace/sacp
 LOG_FILE=/home/fahad/sacp-watcher.log
 ```
