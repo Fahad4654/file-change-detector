@@ -1,4 +1,5 @@
 # Logs
+watcher.log
 logs
 *.log
 npm-debug.log*
