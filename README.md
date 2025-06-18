@@ -25,8 +25,8 @@ Create a `.env` file in the project root with the following contents:
 EMAIL_USER=sender@mail.com
 EMAIL_PASS=****************
 EMAIL_TO=receiver@mail.com
-WATCH_DIR=/home/fahad/Workspace/sacp
-LOG_FILE=/home/fahad/sacp-watcher.log
+WATCH_DIR=/path/to/detect
+LOG_FILE=/path/to/log/watcher.log
 ```
 
 
@@ -65,7 +65,7 @@ node watcher.js
 nvm install 24
 npm install
 npm install -g pm2@latest
-pm2 start watcher.js --name sacp-watcher
+pm2 start watcher.js --name watcher
 pm2 save                                         # Save the process list
 pm2 startup                                      # Auto-start on system boot (follow PM2's instructions)
 
@@ -88,7 +88,7 @@ Each event sends an email and logs the event to the configured log file.
 All detected changes are saved to the file defined in LOG_FILE, with timestamps. Example:
 
 ```code
-[2025-06-18T14:30:21.456Z] 📄 File added: /home/fahad/Workspace/sacp/example.txt
+[2025-06-18T14:30:21.456Z] 📄 File added: /path/to/detect/example.txt
 ```
 
 
